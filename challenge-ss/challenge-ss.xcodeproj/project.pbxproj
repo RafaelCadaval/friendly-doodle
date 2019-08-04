@@ -14,6 +14,7 @@
 		3464890522F78C6F00984A65 /* challenge_ssTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464890422F78C6F00984A65 /* challenge_ssTests.swift */; };
 		3464891022F78C6F00984A65 /* challenge_ssUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464890F22F78C6F00984A65 /* challenge_ssUITests.swift */; };
 		3464891F22F7945000984A65 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464891E22F7945000984A65 /* EventsTableViewController.swift */; };
+		3464892222F795CD00984A65 /* EventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464892122F795CD00984A65 /* EventsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3464890F22F78C6F00984A65 /* challenge_ssUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = challenge_ssUITests.swift; sourceTree = "<group>"; };
 		3464891122F78C6F00984A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3464891E22F7945000984A65 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		3464892122F795CD00984A65 /* EventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		346488EE22F78C6D00984A65 /* challenge-ss */ = {
 			isa = PBXGroup;
 			children = (
+				3464892022F795B100984A65 /* Cells */,
 				3464891D22F7942E00984A65 /* Controllers */,
 				346488EF22F78C6D00984A65 /* AppDelegate.swift */,
 				346488F322F78C6D00984A65 /* Main.storyboard */,
@@ -131,6 +134,14 @@
 				3464891E22F7945000984A65 /* EventsTableViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3464892022F795B100984A65 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3464892122F795CD00984A65 /* EventsTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3464891F22F7945000984A65 /* EventsTableViewController.swift in Sources */,
+				3464892222F795CD00984A65 /* EventsTableViewCell.swift in Sources */,
 				346488F022F78C6D00984A65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
