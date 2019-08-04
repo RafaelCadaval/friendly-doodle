@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		346488F022F78C6D00984A65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346488EF22F78C6D00984A65 /* AppDelegate.swift */; };
-		346488F222F78C6D00984A65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346488F122F78C6D00984A65 /* ViewController.swift */; };
 		346488F522F78C6D00984A65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346488F322F78C6D00984A65 /* Main.storyboard */; };
 		346488F722F78C6E00984A65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 346488F622F78C6E00984A65 /* Assets.xcassets */; };
 		346488FA22F78C6E00984A65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 346488F822F78C6E00984A65 /* LaunchScreen.storyboard */; };
 		3464890522F78C6F00984A65 /* challenge_ssTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464890422F78C6F00984A65 /* challenge_ssTests.swift */; };
 		3464891022F78C6F00984A65 /* challenge_ssUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464890F22F78C6F00984A65 /* challenge_ssUITests.swift */; };
+		3464891F22F7945000984A65 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3464891E22F7945000984A65 /* EventsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		346488EC22F78C6D00984A65 /* challenge-ss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "challenge-ss.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		346488EF22F78C6D00984A65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		346488F122F78C6D00984A65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		346488F422F78C6D00984A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		346488F622F78C6E00984A65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		346488F922F78C6E00984A65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		3464890B22F78C6F00984A65 /* challenge-ssUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "challenge-ssUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3464890F22F78C6F00984A65 /* challenge_ssUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = challenge_ssUITests.swift; sourceTree = "<group>"; };
 		3464891122F78C6F00984A65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3464891E22F7945000984A65 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,8 @@
 		346488EE22F78C6D00984A65 /* challenge-ss */ = {
 			isa = PBXGroup;
 			children = (
+				3464891D22F7942E00984A65 /* Controllers */,
 				346488EF22F78C6D00984A65 /* AppDelegate.swift */,
-				346488F122F78C6D00984A65 /* ViewController.swift */,
 				346488F322F78C6D00984A65 /* Main.storyboard */,
 				346488F622F78C6E00984A65 /* Assets.xcassets */,
 				346488F822F78C6E00984A65 /* LaunchScreen.storyboard */,
@@ -123,6 +123,14 @@
 				3464891122F78C6F00984A65 /* Info.plist */,
 			);
 			path = "challenge-ssUITests";
+			sourceTree = "<group>";
+		};
+		3464891D22F7942E00984A65 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3464891E22F7945000984A65 /* EventsTableViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				346488F222F78C6D00984A65 /* ViewController.swift in Sources */,
+				3464891F22F7945000984A65 /* EventsTableViewController.swift in Sources */,
 				346488F022F78C6D00984A65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

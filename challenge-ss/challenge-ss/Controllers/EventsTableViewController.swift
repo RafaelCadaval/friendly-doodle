@@ -1,20 +1,18 @@
 //
-//  ViewController.swift
+//  EventsTableViewController.swift
 //  challenge-ss
 //
 //  Created by Rafael Cadaval on 04/08/19.
 //  Copyright © 2019 Rafael Cadaval. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-
+class EventsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        self.navigationController?.navigationBar.prefersLargeTitles = true
     }
-
-
 }
-
