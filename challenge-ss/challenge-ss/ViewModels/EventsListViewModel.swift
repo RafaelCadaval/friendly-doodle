@@ -43,19 +43,8 @@ struct EventViewModel {
     var longitude: StringOrDoubleTypeCase {
         return event.longitude
     }
-    var image: UIImage {
-        var downloadedImage = UIImage()
-        let url = URL(string: event.image)!
-        KingfisherManager.shared.retrieveImage(with: url) { result in
-            switch result {
-            case .success(let imageResult):
-                downloadedImage = imageResult.image
-            case .failure(let error):
-                // TODO: implement placeholder image case
-                fatalError("Could not download image. Kingfisher error: \(error.errorDescription)")
-            }
-        }
-        return downloadedImage
+    var imageURL: URL {
+        return URL(string: event.image)!
     }
     var description: String {
         return event.description
